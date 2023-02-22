@@ -5,4 +5,4 @@
 ![Portfolio](https://i.postimg.cc/hjvKzxqs/travel01.png)
 
 ## Description
-Full Stack React Portfolio Website, using React, and sanity-io, a content management system that allows you to manage text, images, and other data using APIs.
+Google maps travel companion application that incorporates Geolocation, Google Maps API & Google Places API to fetch data, based on the user's location.
