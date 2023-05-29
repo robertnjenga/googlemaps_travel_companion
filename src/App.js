@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import List from './components/List/List';
 import Map from './components/Map/Map';
 import { getPlacesData } from './api';
-import { getWeatherData } from './api';
+// import { getWeatherData } from './api';
 
 const App = () => {
   const [places, setPlaces] = useState([]);
@@ -38,9 +38,9 @@ const App = () => {
     if (bounds.sw && bounds.ne) {
       setIsLoading(true);
 
-      getWeatherData(coordinates.lat, coordinates.lng).then((data) =>
-        setWeatherData(data)
-      );
+      // getWeatherData(coordinates.lat, coordinates.lng).then((data) =>
+      //   setWeatherData(data)
+      // );
 
       getPlacesData(type, bounds.sw, bounds.ne).then((data) => {
         setPlaces(data?.filter((place) => place.name && place.num_reviews > 0));

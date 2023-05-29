@@ -27,24 +27,24 @@ export const getPlacesData = async (type, sw, ne) => {
   }
 };
 
-export const getWeatherData = async (lat, lng) => {
-  try {
-    const { data } = await axios.get(
-      'https://rapidweather.p.rapidapi.com/data/2.5/weather',
-      {
-        params: {
-          lat: lat,
-          lon: lng,
-        },
-        headers: {
-          'X-RapidAPI-Key':
-          process.env.REACT_APP_RAPIDAPI_KEY,
-          'X-RapidAPI-Host': 'rapidweather.p.rapidapi.com'
-        },
-      }
-    );
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
-};
+// export const getWeatherData = async (lat, lng) => {
+//   try {
+//     const { data } = await axios.get(
+//       'https://rapidweather.p.rapidapi.com/data/2.5/weather',
+//       {
+//         params: {
+//           lat: lat,
+//           lon: lng,
+//         },
+//         headers: {
+//           'X-RapidAPI-Key':
+//           process.env.REACT_APP_RAPIDAPI_KEY,
+//           'X-RapidAPI-Host': 'rapidweather.p.rapidapi.com'
+//         },
+//       }
+//     );
+//     return data;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };

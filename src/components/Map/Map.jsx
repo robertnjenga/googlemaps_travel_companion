@@ -75,15 +75,15 @@ const Map = ({
             lng={Number(place.longitude)}
           />
         ))}
-        {weatherData?.list?.map((data, i) => (
+        {/* {weatherData?.list?.map((data, i) => (
           <div key={i} lat={data.coord.lat} lng={data.coord.long}>
             <img
               height={100}
-              src={`https://rapidweather.com/img/${data.current.weather[0].icon}.png`}
+              src={`https://rapidweather.p.rapidapi.com/data/2.5/weather/${data.weather[0].icon}`}
               alt={''}
             />
           </div>
-        ))}
+        ))} */}
       </GoogleMapReact>
     </div>
   );
