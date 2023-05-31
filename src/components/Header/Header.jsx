@@ -6,17 +6,17 @@ import SearchIcon from '@material-ui/icons/Search';
 import useStyles from './styles';
 
 const Header = ({ setCoordinates }) => {
-const classes = useStyles()  
-const [autocomplete, setAutocomplete] = useState(null);
+  const classes = useStyles();
+  const [autocomplete, setAutocomplete] = useState(null);
 
-const onLoad = (autoC) => setAutocomplete(autoC)
+  const onLoad = (autoC) => setAutocomplete(autoC);
 
-const onPlaceChanged = () => {
-const lat = autocomplete.getPlace().geometry.location.lat()
-const lng = autocomplete.getPlace().geometry.location.lng()
+  const onPlaceChanged = () => {
+    const lat = autocomplete.getPlace().geometry.location.lat();
+    const lng = autocomplete.getPlace().geometry.location.lng();
 
-setCoordinates({ lat, lng })
-}
+    setCoordinates({ lat, lng });
+  };
   return (
     <AppBar position="static">
       <Toolbar className={classes.toolbar}>
