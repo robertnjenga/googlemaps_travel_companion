@@ -1,4 +1,4 @@
-# Travel companion application
+# Travel Companion 
 
 ### [Live Site](https://robertnjenga.github.io/googlemaps_travel_companion/)
 
